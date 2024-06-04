@@ -18,20 +18,34 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
-      <body className="container box-border max-w-2xl mx-auto">
+      <body className="container mx-auto box-border max-w-2xl">
         <header>
           <nav>
-            <ul className="flex flex-wrap flex-row">
-              <li className="py-0 pr-4"><Link href="/">About</Link></li>
-              <li className="py-0 pr-4"><Link href="/projects">Projects</Link></li>
-              <li className="py-0"><Link href="/#contact">Contact</Link></li>
-              <li className="py-0 ml-auto"><Link href="TODO: resume">Resume</Link></li>
+            <ul className="flex flex-row flex-wrap">
+              <li className="py-0 pr-4">
+                <Link href="/">About</Link>
+              </li>
+              <li className="py-0 pr-4">
+                <Link href="/projects">Projects</Link>
+              </li>
+              <li className="py-0">
+                <Link href="/#contact">Contact</Link>
+              </li>
+              <li className="ml-auto py-0">
+                <Link href="beaumccartney-resume.pdf" target="_blank">
+                  Resume
+                </Link>
+              </li>
             </ul>
           </nav>
         </header>
         {children}
         <footer>
-          <div className="text-center"><p><small>&copy; {new Date().getFullYear()} Beau McCartney</small></p></div>
+          <div className="text-center">
+            <p>
+              <small>&copy; {new Date().getFullYear()} Beau McCartney</small>
+            </p>
+          </div>
         </footer>
       </body>
     </html>
