@@ -32,11 +32,11 @@ export default function HomePage() {
         </ul>
       </header>
       <section>
-        <h1 className="mb-2 text-lg font-semibold text-neutral-800">
+        <h1 className="mb-3 text-xl font-semibold text-neutral-800">
           <Link href={`mailto:${email}`}>{email}</Link>
         </h1>
 
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-3">
           <p>
             Hello, I&apos;m Beau! I love learning about the world around me, and
             exploring it by building.
@@ -55,16 +55,16 @@ export default function HomePage() {
         </div>
       </section>
       <section>
-        <h2 className=" mb-2 text-lg font-semibold text-neutral-800">
+        <h2 className=" mb-3 text-xl font-semibold text-neutral-800">
           Projects
         </h2>
-        <ul className="flex flex-col gap-2">
+        <ul className="flex flex-col gap-3">
           <li className="rounded-md border border-neutral-200 py-4 pl-3 pr-10 hover:bg-neutral-200">
             <Link href="https://crp-docs.vercel.app/">
-              <h3 className="text-semibold mb-2 text-neutral-800">
+              <h3 className="text-lg font-semibold mb-2 text-neutral-800">
                 create-ros-project
               </h3>
-              <p className="text-sm text-neutral-500">
+              <p className="text-neutral-500">
                 A simple and fast CLI tool for managing ROS (Robotics Operating
                 System) projects.
               </p>
@@ -72,8 +72,8 @@ export default function HomePage() {
           </li>
           <li className="rounded-md border border-neutral-200 py-4 pl-3 pr-10 hover:bg-neutral-200">
             <Link href="https://github.com/beauslm/golf">
-              <h3 className="text-semibold mb-2 text-neutral-800">golf</h3>
-              <p className="text-sm text-neutral-500">
+              <h3 className="text-lg font-semibold mb-2 text-neutral-800">golf</h3>
+              <p className="text-neutral-500">
                 Compile a subset of golang to mips-32 assembly. Handwritten
                 tokenizer, recursive descent parser, semantic checker, and
                 assembly generator.
@@ -82,10 +82,10 @@ export default function HomePage() {
           </li>
           <li className="rounded-md border border-neutral-200 px-2 py-4 hover:bg-neutral-200">
             <Link href="https://github.com/SamuelGarm/CPSC-585">
-              <h3 className="text-semibold mb-2 text-neutral-800">
+              <h3 className="text-lg font-semibold mb-2 text-neutral-800">
                 maximus overdrive
               </h3>
-              <p className="text-sm text-neutral-500">
+              <p className="text-neutral-500">
                 A 3d roman chariot racing game built in OpenGL and C++.
               </p>
             </Link>
