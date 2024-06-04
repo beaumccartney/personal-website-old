@@ -6,21 +6,16 @@ export default function HomePage() {
   return (
     <main className="flex min-h-screen flex-col gap-5 py-10">
       <header>
-        <ul className="flex flex-row flex-wrap text-lg underline-offset-2">
-          <li className="pr-10">
-            <Link className="hover:underline" href="https://github.com/BeauSLM">
-              GitHub
-            </Link>
+        <ul className="flex flex-row flex-wrap gap-10 text-lg underline-offset-2">
+          <li className="hover:underline">
+            <Link href="https://github.com/BeauSLM">GitHub</Link>
           </li>
-          <li>
-            <Link
-              className="hover:underline"
-              href="https://www.linkedin.com/in/beau-mccartney-247b0820a/"
-            >
+          <li className="hover:underline">
+            <Link href="https://www.linkedin.com/in/beau-mccartney-247b0820a/">
               LinkedIn
             </Link>
           </li>
-          <li className="ml-auto">
+          <li className="ml-auto hover:underline">
             <Link
               className="hover:underline"
               href="beaumccartney-resume.pdf"
