@@ -8,7 +8,6 @@ import { GeistSans } from "geist/font/sans";
 export const metadata = {
   title: "Beau McCartney",
   description: "TODO",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
 export default function RootLayout({
