@@ -6,21 +6,22 @@ export default function HomePage() {
   return (
     <main className="flex min-h-screen flex-col gap-5">
       <header>
-        <ul className="flex flex-row flex-wrap gap-10 text-lg underline-offset-2">
+        <ul className="flex flex-row flex-wrap gap-10 text-lg">
           <li className="hover:underline">
-            <Link href="https://github.com/BeauSLM">GitHub</Link>
+            <Link href="https://github.com/BeauSLM" target="_blank">
+              GitHub
+            </Link>
           </li>
           <li className="hover:underline">
-            <Link href="https://www.linkedin.com/in/beau-mccartney-247b0820a/">
+            <Link
+              href="https://www.linkedin.com/in/beau-mccartney-247b0820a/"
+              target="_blank"
+            >
               LinkedIn
             </Link>
           </li>
           <li className="order-last ml-auto hover:underline">
-            <Link
-              className="hover:underline"
-              href="beaumccartney-resume.pdf"
-              target="_blank"
-            >
+            <Link href="beaumccartney-resume.pdf" target="_blank">
               Resume
             </Link>
           </li>
@@ -55,7 +56,7 @@ export default function HomePage() {
         </h2>
         <ul className="flex flex-col gap-3">
           <li className="rounded-md border border-neutral-200 py-4 pl-3 pr-10 hover:bg-neutral-200">
-            <Link href="https://crp-docs.vercel.app/">
+            <Link href="https://crp-docs.vercel.app/" target="_blank">
               <h3 className="mb-2 text-lg font-semibold text-neutral-800">
                 create-ros-project
               </h3>
@@ -66,7 +67,7 @@ export default function HomePage() {
             </Link>
           </li>
           <li className="rounded-md border border-neutral-200 py-4 pl-3 pr-10 hover:bg-neutral-200">
-            <Link href="https://github.com/beauslm/golf">
+            <Link href="https://github.com/beauslm/golf" target="_blank">
               <h3 className="mb-2 text-lg font-semibold text-neutral-800">
                 golf - [gol]ang [f]ragment
               </h3>
@@ -78,7 +79,7 @@ export default function HomePage() {
             </Link>
           </li>
           <li className="rounded-md border border-neutral-200 px-2 py-4 hover:bg-neutral-200">
-            <Link href="https://github.com/SamuelGarm/CPSC-585">
+            <Link href="https://github.com/SamuelGarm/CPSC-585" target="_blank">
               <h3 className="mb-2 text-lg font-semibold text-neutral-800">
                 maximus overdrive
               </h3>
