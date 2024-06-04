@@ -32,7 +32,7 @@ export default function HomePage() {
         </ul>
       </header>
       <section>
-        <h1 className="mb-3 text-xl font-semibold text-neutral-800">
+        <h1 className="mb-3 text-xl hover:underline font-semibold text-neutral-800">
           <Link href={`mailto:${email}`}>{email}</Link>
         </h1>
 
