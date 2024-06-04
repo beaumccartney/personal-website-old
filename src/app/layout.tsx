@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
-      <body className="container mx-auto max-w-xl text-neutral-700 antialiased">
+      <body className="container mx-auto max-w-xl px-8 py-10 text-neutral-700 antialiased">
         {children}
       </body>
     </html>

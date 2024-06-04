@@ -4,7 +4,7 @@ export default function HomePage() {
   const email = "mccartney.beausl@gmail.com";
 
   return (
-    <main className="flex min-h-screen flex-col gap-5 py-10">
+    <main className="flex min-h-screen flex-col gap-5">
       <header>
         <ul className="flex flex-row flex-wrap gap-10 text-lg underline-offset-2">
           <li className="hover:underline">
