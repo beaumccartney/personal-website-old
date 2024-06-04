@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
-      <body className="container mx-auto box-border max-w-2xl">
+      <body className="container mx-auto max-w-2xl">
         <header>
           <nav>
             <ul className="flex flex-row flex-wrap">
