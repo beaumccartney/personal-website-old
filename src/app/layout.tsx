@@ -40,13 +40,6 @@ export default function RootLayout({
           </nav>
         </header>
         {children}
-        <footer>
-          <div className="text-center">
-            <p>
-              <small>&copy; {new Date().getFullYear()} Beau McCartney</small>
-            </p>
-          </div>
-        </footer>
       </body>
     </html>
   );
