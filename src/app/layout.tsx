@@ -22,16 +22,16 @@ export default function RootLayout({
         <header>
           <nav>
             <ul className="flex flex-row flex-wrap">
-              <li className="py-0 pr-4">
+              <li className="pr-4">
                 <Link href="/">About</Link>
               </li>
-              <li className="py-0 pr-4">
+              <li className="pr-4">
                 <Link href="/projects">Projects</Link>
               </li>
-              <li className="py-0">
+              <li>
                 <Link href="/#contact">Contact</Link>
               </li>
-              <li className="ml-auto py-0">
+              <li className="ml-auto">
                 <Link href="beaumccartney-resume.pdf" target="_blank">
                   Resume
                 </Link>
