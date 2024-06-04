@@ -15,7 +15,7 @@ export default function HomePage() {
               LinkedIn
             </Link>
           </li>
-          <li className="ml-auto hover:underline">
+          <li className="order-last ml-auto hover:underline">
             <Link
               className="hover:underline"
               href="beaumccartney-resume.pdf"
