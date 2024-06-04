@@ -11,7 +11,7 @@ export default function HomePage() {
         <br />
         <p>
           I&apos;m currently searching for my next opportunity. If you&apos;re
-          interested in working with me, please shoot me an email!
+          interested in working with me, please <Link href="/#contact">reach out</Link>!
         </p>
         <br />
         <p>
