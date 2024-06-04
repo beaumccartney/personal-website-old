@@ -1,13 +1,11 @@
 import "~/styles/globals.css";
 
-import Link from "next/link";
-
 // TODO: font
 import { GeistSans } from "geist/font/sans";
 
 export const metadata = {
   title: "Beau McCartney",
-  description: "TODO",
+  description: "My personal website",
 };
 
 export default function RootLayout({
