@@ -5,8 +5,8 @@ export default function HomePage() {
 
   return (
     <>
-      <main className="min-h-screen py-16">
-        <header className="pb-5">
+      <main className="min-h-screen py-10 flex flex-col gap-5">
+        <header>
           <ul className="flex flex-row flex-wrap text-lg underline-offset-2">
             <li className="pr-10">
               <Link
@@ -35,31 +35,33 @@ export default function HomePage() {
             </li>
           </ul>
         </header>
-        <section className="pb-6">
+        <section>
           <h1 className="mb-2 underline">
             <Link href={`mailto:${email}`}>{email}</Link>
           </h1>
 
-          <p className="mb-3">
-            Hello, I&apos;m Beau! I love learning about the world around me, and
-            exploring it by building.
-          </p>
+          <div className="flex flex-col gap-2">
+            <p>
+              Hello, I&apos;m Beau! I love learning about the world around me, and
+              exploring it by building.
+            </p>
 
-          <p className="mb-3">
-            I studied software engineering at the University of Calgary,
-            completing my degree in May 2024. I specialize in compiler
-            technology, game engine technology, and computer architecture.
-          </p>
+            <p>
+              I studied software engineering at the University of Calgary,
+              completing my degree in May 2024. I specialize in compiler
+              technology, game engine technology, and computer architecture.
+            </p>
 
-          <p>
-            I&apos;m currently searching for my next opportunity. If you&apos;re
-            interested in working with me, please reach out!
-          </p>
+            <p>
+              I&apos;m currently searching for my next opportunity. If you&apos;re
+              interested in working with me, please reach out!
+            </p>
+          </div>
         </section>
-        <section className="pb-6">
+        <section>
           <h2 className="mb-2 underline">Projects</h2>
           <ul className="flex flex-col gap-2">
-            <li className="rounded-md border border-neutral-200 px-3 py-5">
+            <li className="rounded-md border border-neutral-200 hover:bg-neutral-200 px-2 py-4">
               <Link href="https://crp-docs.vercel.app/">
                 <h3>create-ros-project</h3>
                 <p>
@@ -68,7 +70,7 @@ export default function HomePage() {
                 </p>
               </Link>
             </li>
-            <li className="rounded-md border border-neutral-200 px-2 py-5">
+            <li className="rounded-md border border-neutral-200 hover:bg-neutral-200 px-2 py-4">
               <Link href="https://github.com/beauslm/golf">
                 <h3>golf</h3>
                 <p>
@@ -78,7 +80,7 @@ export default function HomePage() {
                 </p>
               </Link>
             </li>
-            <li className="rounded-md border border-neutral-200 px-2 py-5">
+            <li className="rounded-md border border-neutral-200 hover:bg-neutral-200 px-2 py-4">
               <Link href="https://github.com/SamuelGarm/CPSC-585">
                 <h3>maximus overdrive</h3>
                 <p>A 3d roman chariot racing game built in OpenGL and C++.</p>
