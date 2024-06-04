@@ -68,7 +68,7 @@ export default function HomePage() {
           <li className="rounded-md border border-neutral-200 py-4 pl-3 pr-10 hover:bg-neutral-200">
             <Link href="https://github.com/beauslm/golf">
               <h3 className="mb-2 text-lg font-semibold text-neutral-800">
-                golf
+                golf - [gol]ang [f]ragment
               </h3>
               <p className="text-neutral-500">
                 Compile a subset of golang to mips-32 assembly. Handwritten
