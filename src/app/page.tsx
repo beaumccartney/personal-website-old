@@ -43,7 +43,7 @@ export default function HomePage() {
         </ul>
       </header>
       <section>
-        <h1 className="mb-3 text-xl font-semibold text-neutral-800 hover:underline">
+        <h1 className="pb-3 text-xl font-semibold text-neutral-800 hover:underline">
           <Link href={`mailto:${email}`}>{email}</Link>
         </h1>
 
@@ -66,7 +66,7 @@ export default function HomePage() {
         </div>
       </section>
       <section>
-        <h2 className=" mb-3 text-xl font-semibold text-neutral-800">
+        <h2 className=" pb-3 text-xl font-semibold text-neutral-800">
           Projects
         </h2>
         <ul className="flex flex-col gap-3">
@@ -76,7 +76,7 @@ export default function HomePage() {
               key={name}
             >
               <Link href={link} target="_blank">
-                <h3 className="mb-2 text-lg font-semibold text-neutral-800">
+                <h3 className="pb-2 text-lg font-semibold text-neutral-800">
                   {name}
                 </h3>
                 <p className="text-neutral-500">{desc}</p>
