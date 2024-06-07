@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="en" className={`${GeistSans.variable}`}>
       <body className=" text-neutral-700 antialiased">
         <div className="container mx-auto grid min-h-screen max-w-xl grid-rows-[auto,1fr] gap-2">
-          <header className="border-b p-4 text-xl">
+          <header className="border-b-2 p-4 text-xl">
             <ul className="flex flex-row flex-wrap items-center gap-10">
               {toplinks.map(([link, str]) => (
                 <li className="last:ml-auto hover:underline" key={str}>
