@@ -3,12 +3,6 @@ import Link from "next/link";
 export default function HomePage() {
   const email = "mccartney.beausl@gmail.com";
 
-  const toplinks: [string, string][] = [
-    ["https://github.com/BeauSLM", "GitHub"],
-    ["https://www.linkedin.com/in/beau-mccartney-247b0820a/", "LinkedIn"],
-    ["beaumccartney-resume.pdf", "Resume"],
-  ];
-
   const projects: [string, string, string][] = [
     [
       "https://crp-docs.vercel.app/",
@@ -30,18 +24,7 @@ export default function HomePage() {
   ];
 
   return (
-    <main className="flex min-h-screen flex-col gap-5">
-      <header>
-        <ul className="flex flex-row flex-wrap gap-10 text-lg">
-          {toplinks.map(([link, str]) => (
-            <li className="last:ml-auto hover:underline" key={str}>
-              <Link href={link} target="_blank">
-                {str}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </header>
+    <div className="flex flex-col gap-5 p-4">
       <section>
         <h1 className="pb-3 text-xl font-semibold text-neutral-800 hover:underline">
           <Link href={`mailto:${email}`}>{email}</Link>
@@ -85,6 +68,6 @@ export default function HomePage() {
           ))}
         </ul>
       </section>
-    </main>
+    </div>
   );
 }
