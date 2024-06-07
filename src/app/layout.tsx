@@ -10,33 +10,32 @@ export const metadata = {
   description: "My personal website",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  const toplinks: [string, string][] = [
-    ["https://github.com/BeauSLM", "GitHub"],
-    ["https://www.linkedin.com/in/beau-mccartney-247b0820a/", "LinkedIn"],
-    ["beaumccartney-resume.pdf", "Resume"],
-  ];
+function TopLink(props: { href: string; name: string }) {
+  return (
+    <Link className="hover:underline" href={props.href} target="_blank">
+      {props.name}
+    </Link>
+  );
+}
 
+export default function RootLayout(props: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
       <body className=" text-neutral-700 antialiased">
         <div className="container mx-auto grid min-h-screen max-w-xl grid-rows-[auto,1fr] gap-2">
-          <header className="border-b-2 p-4 text-xl">
-            <ul className="flex flex-row flex-wrap items-center gap-10">
-              {toplinks.map(([link, str]) => (
-                <li className="last:ml-auto hover:underline" key={str}>
-                  <Link href={link} target="_blank">
-                    {str}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+          <header className="flex flex-wrap items-center justify-between border-b-2 p-4 text-xl">
+            <div className="font-bold">
+              <TopLink href="beaumccartney-resume.pdf" name="Resume" />
+            </div>
+            <div className="flex flex-row flex-wrap items-center gap-10">
+              <TopLink href="https://github.com/BeauSLM" name="GitHub" />
+              <TopLink
+                href="https://www.linkedin.com/in/beau-mccartney-247b0820a/"
+                name="LinkedIn"
+              />
+            </div>
           </header>
-          <main>{children}</main>
+          <main>{props.children}</main>
         </div>
       </body>
     </html>
