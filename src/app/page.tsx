@@ -23,14 +23,16 @@ export default function HomePage() {
     ],
   ];
 
+  const section_item_style = "grid gap-3";
+
   return (
-    <div className="flex flex-col gap-5 p-4">
+    <div className="grid gap-5 p-4">
       <section>
         <h1 className="pb-3 text-xl font-semibold text-neutral-800 hover:underline">
           <Link href={`mailto:${email}`}>{email}</Link>
         </h1>
 
-        <div className="flex flex-col gap-3">
+        <div className={`${section_item_style}`}>
           <p>
             Hello, I&apos;m Beau! I love learning about the world around me, and
             exploring it by building.
@@ -52,7 +54,7 @@ export default function HomePage() {
         <h2 className=" pb-3 text-xl font-semibold text-neutral-800">
           Projects
         </h2>
-        <ul className="flex flex-col gap-3">
+        <ul className={`${section_item_style}`}>
           {projects.map(([link, name, desc]) => (
             <li
               className="rounded-md border border-neutral-200 py-4 pl-3 pr-10 hover:bg-neutral-200"
