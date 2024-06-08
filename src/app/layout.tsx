@@ -2,8 +2,6 @@ import "~/styles/globals.css";
 
 import Link from "next/link";
 
-import PlausibleProvider from "next-plausible";
-
 // TODO: font
 import { GeistSans } from "geist/font/sans";
 
@@ -23,21 +21,12 @@ function TopLink(props: { href: string; name: string }) {
 export default function RootLayout(props: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
-      <head>
-        {process.env.NODE_ENV === "production" && (
-          // TODO: don't hardcode domain
-          <PlausibleProvider domain="beaumccartney.vercel.app" />
-        )}
-      </head>
       <body className=" text-neutral-700 antialiased">
         <div className="container mx-auto grid max-w-xl gap-1">
           <header className="flex justify-between border-b-2 p-4 text-xl">
             <div className="font-bold">
               {/* TODO: link to new resume */}
-              <TopLink
-                href="https://utfs.io/f/27ac9f65-0d4c-4076-817c-a63b6032cb62-eyyx7p.pdf"
-                name="Resume"
-              />
+              <TopLink href="https://utfs.io/f/27ac9f65-0d4c-4076-817c-a63b6032cb62-eyyx7p.pdf" name="Resume" />
             </div>
             <div className="flex gap-10">
               <TopLink href="https://github.com/BeauSLM" name="GitHub" />
