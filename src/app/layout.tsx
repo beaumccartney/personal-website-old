@@ -5,6 +5,8 @@ import Link from "next/link";
 // TODO: font
 import { GeistSans } from "geist/font/sans";
 
+import { Analytics } from "@vercel/analytics/react";
+
 export const metadata = {
   title: "Beau McCartney",
   description: "My personal website",
@@ -38,6 +40,7 @@ export default function RootLayout(props: { children: React.ReactNode }) {
           </header>
           <main>{props.children}</main>
         </div>
+        <Analytics />
       </body>
     </html>
   );
