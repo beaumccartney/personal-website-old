@@ -6,6 +6,7 @@ import Link from "next/link";
 import { GeistSans } from "geist/font/sans";
 
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
   title: "Beau McCartney",
@@ -41,6 +42,7 @@ export default function RootLayout(props: { children: React.ReactNode }) {
           <main>{props.children}</main>
         </div>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
