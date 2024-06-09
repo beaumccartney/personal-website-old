@@ -24,11 +24,11 @@ export default function HomePage() {
     ],
   ];
 
-  const section_item_style = "grid gap-3";
+  const section_item_style = "space-y-3";
 
 
   return (
-    <div className="grid gap-5 p-4">
+    <div className="space-y-5 p-4">
       <section>
         <h1 className="pb-3 text-xl font-semibold text-neutral-800 hover:underline">
           <Link href={`mailto:${email}`}>{email}</Link>
