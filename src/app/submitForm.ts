@@ -1,5 +1,6 @@
 "use server";
 
+import "server-only";
 import { env } from "~/env";
 
 export default async function submitForm(
