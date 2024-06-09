@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Web3Form from "./web3form";
+// import Web3Form from "./web3form";
 
 export default function HomePage() {
   const email = "mccartney.beausl@gmail.com";
@@ -69,12 +69,12 @@ export default function HomePage() {
           ))}
         </ul>
       </section>
-      <section>
-        <h2 className="text-xl font-semibold text-neutral-800">
-          Get in touch
-        </h2>
-        <Web3Form />
-      </section>
+      {/* <section> */}
+      {/*   <h2 className="text-xl font-semibold text-neutral-800"> */}
+      {/*     Get in touch */}
+      {/*   </h2> */}
+      {/*   <Web3Form /> */}
+      {/* </section> */}
     </div>
   );
 }
