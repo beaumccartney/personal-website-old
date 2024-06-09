@@ -8,3 +8,5 @@
 - [ ] small article
 - [ ] gh action to lint and check with typescript
     - I have it turned off locally and on deploy so its faster
+
+- [ ] gh action to typecheck and lint
