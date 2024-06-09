@@ -31,7 +31,7 @@ export default function RootLayout(props: { children: React.ReactNode }) {
               {/* TODO: link to new resume */}
               <TopLink href="https://utfs.io/f/27ac9f65-0d4c-4076-817c-a63b6032cb62-eyyx7p.pdf" name="Resume" />
             </div>
-            <div className="flex gap-10">
+            <div className="space-x-10">
               <TopLink href="https://github.com/BeauSLM" name="GitHub" />
               <TopLink
                 href="https://www.linkedin.com/in/beau-mccartney-247b0820a/"

@@ -27,7 +27,7 @@ export default function HomePage() {
   return (
     <div className="space-y-5 p-4">
       <section>
-        <h1 className="pb-3 text-xl font-semibold text-neutral-800 hover:underline">
+        <h1 className="text-xl font-semibold text-neutral-800 hover:underline">
           <Link href={`mailto:${email}`}>{email}</Link>
         </h1>
 
@@ -50,7 +50,7 @@ export default function HomePage() {
         </div>
       </section>
       <section>
-        <h2 className=" pb-3 text-xl font-semibold text-neutral-800">
+        <h2 className="text-xl font-semibold text-neutral-800">
           Projects
         </h2>
         <ul className="section-items">
@@ -59,8 +59,8 @@ export default function HomePage() {
               className="rounded-md border border-neutral-200 py-4 pl-3 pr-10 hover:bg-neutral-200"
               key={name}
             >
-              <Link href={link} target="_blank">
-                <h3 className="pb-2 text-lg font-semibold text-neutral-800">
+              <Link className="space-y-2" href={link} target="_blank">
+                <h3 className="text-lg font-semibold text-neutral-800">
                   {name}
                 </h3>
                 <p className="text-neutral-500">{desc}</p>
@@ -70,7 +70,7 @@ export default function HomePage() {
         </ul>
       </section>
       <section>
-        <h2 className=" pb-3 text-xl font-semibold text-neutral-800">
+        <h2 className="text-xl font-semibold text-neutral-800">
           Get in touch
         </h2>
         <Web3Form />

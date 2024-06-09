@@ -5,3 +5,7 @@
 .section-items {
   @apply space-y-3;
 }
+
+section {
+  @apply space-y-4;
+}
