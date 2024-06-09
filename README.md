@@ -1,5 +1,8 @@
 # TODO
 
+- [x] add an email form (https://web3forms.com/)
+- [ ] style it
+
 - [ ] mdx support
 - [ ] page linking to each mdx "post"
 - [ ] small article

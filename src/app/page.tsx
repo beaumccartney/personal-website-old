@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Web3Form from "./web3form";
 
 export default function HomePage() {
   const email = "mccartney.beausl@gmail.com";
@@ -24,6 +25,7 @@ export default function HomePage() {
   ];
 
   const section_item_style = "grid gap-3";
+
 
   return (
     <div className="grid gap-5 p-4">
@@ -69,6 +71,12 @@ export default function HomePage() {
             </li>
           ))}
         </ul>
+      </section>
+      <section>
+        <h2 className=" pb-3 text-xl font-semibold text-neutral-800">
+          Get in touch
+        </h2>
+        <Web3Form />
       </section>
     </div>
   );
