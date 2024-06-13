@@ -1,5 +1,7 @@
 # TODO
 
+- [ ] host resume out of /public, not uploadthing
+
 - [x] add an email form (https://web3forms.com/)
 - [ ] style it
 
